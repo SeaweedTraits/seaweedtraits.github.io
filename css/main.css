@@ -2,7 +2,12 @@ body {
   font-family: Montserrat;
   font-weight: 400;
   margin: 0px;
-  color: #3E3936
+  color: #3E3936;
+  line-height: 1.5
+}
+
+img {
+  max-width: 100%
 }
 
 .container {
@@ -27,22 +32,39 @@ body {
    padding: 5% 25%;
    color: #FFFFFF;
    font-size: 1.5em;
-   line-height: 1.5em
 }
 
 .welcome h1 {
   font-size: 2em;
   font-family: Arvo;
-  line-height: 1em
+  line-height: 1
 }
 
 .welcome img {
    width: 20%
 }
 
+.about-wrapper {
+  padding: 5% 25%;
+  overflow: hidden
+}
 
-img {
-  max-width: 100%
+.about {
+  width: 33.333333%;
+  margin: 0px auto;
+  float: left
+}
+
+.about h1 {
+  font-size: 1.5em;
+  text-align: center
+}
+
+.about img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%
 }
 
 
@@ -66,14 +88,7 @@ img {
     font-size: 1em
   }
 
-
   .welcome h1 {
     font-size: 1.25em
   }
-
-  .welcome img {
-     width: 50%
-  }
-
-
 }

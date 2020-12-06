@@ -6,18 +6,42 @@ body {
   line-height: 1.5
 }
 
-img {
-  max-width: 100%
-}
-
 a:link, a:visited {
   text-decoration: none;
-  color: #4d4d4d;
+  color: #646B79;
   font-weight: 700
 }
 
 a:hover, a:active {
   text-decoration: underline;
+}
+
+i.fab, i.ai {
+  padding: 10px!important;
+  border-radius: 50%;
+  background-color: #646B79;
+  color: white;
+  margin-bottom: 25px;
+  font-size: 1.5em
+}
+
+i.fab:hover, i.fab:active, i.ai:hover, i.ai:active {
+  opacity: 0.8
+}
+
+h1 {
+  margin: 0px;
+  font-family: Arvo;
+  font-size: 2em
+}
+
+h2 {
+  font-family: Arvo;
+  font-size: 1.8em
+}
+
+h3 {
+  font-family: Arvo
 }
 
 .container {
@@ -29,12 +53,6 @@ a:hover, a:active {
   padding: 25px;
 }
 
-.page-title h1 {
-  margin: 0px;
-  font-family: Arvo;
-  font-size: 2em
-}
-
 .welcome {
    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://raw.githubusercontent.com/SeaweedTraits/seaweedtraits.github.io/main/images/background.jpeg);
    background-size: 100% auto;
@@ -42,12 +60,6 @@ a:hover, a:active {
    padding: 5% 25%;
    color: #FFFFFF;
    font-size: 1.5em;
-}
-
-.welcome h1 {
-  font-size: 2em;
-  font-family: Arvo;
-  line-height: 1
 }
 
 .welcome img {
@@ -75,16 +87,21 @@ a:hover, a:active {
 }
 
 .about-us-wrapper {
-  padding: 5% 25%;
+  padding: 10px 10%;
   overflow: hidden;
   background-color: #EEEEEE
+}
+
+.about-us {
+  overflow: hidden;
+  margin: 25px
 }
 
 .about-us img {
   width: 25%;
   float: left;
-  margin: 10px;
-    border-radius: 50%
+  margin: 25px;
+  border-radius: 25%
 }
 
 .footer {
@@ -93,7 +110,6 @@ a:hover, a:active {
   font-size: 0.8em;
   text-align: right;
 }
-
 
 
 @media screen and (max-width: 768px) {

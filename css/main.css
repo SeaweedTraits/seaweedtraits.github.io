@@ -116,13 +116,54 @@ h3 {
   width: 40%
 }
 
-
-
 .footer {
   background-color: #eeeeee;
   padding: 10px;
   font-size: 0.8em;
   text-align: right;
+}
+
+#inputSpecies, #inputTraits {
+  background-image: url('../fa-search.svg');
+  background-position: 10px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  width: calc(100% - 60px);
+  font-size: 1em;
+  padding: 10px 20px 10px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+#speciesTable, #traitsTable {
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  font-size: 0.8em;
+  margin: 0px
+}
+
+#speciesTable {
+  white-space: nowrap;
+  font-style: italic;
+  width: 100%
+}
+
+#speciesTable th, #speciesTable td, #traitsTable th, #traitsTable td {
+  text-align: left; /* Left-align text */
+  padding: 10px; /* Add padding */
+
+}
+
+#traitsTable td:first-child {
+  font-weight: 700
+}
+
+#speciesTable tr, #traitsTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#speciesTable tr:hover, #traitsTable tr:hover {
+  background-color: #ffffff;
 }
 
 

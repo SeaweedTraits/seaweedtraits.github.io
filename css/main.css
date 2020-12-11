@@ -104,6 +104,20 @@ h3 {
   border-radius: 25%
 }
 
+.db-wrapper {
+  padding: 10px 10%;
+  overflow: hidden;
+  display: flex;
+  background-color: #EEEEEE
+}
+
+.db {
+  margin: 0px auto;
+  width: 40%
+}
+
+
+
 .footer {
   background-color: #eeeeee;
   padding: 10px;

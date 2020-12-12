@@ -13,19 +13,17 @@
   </head>
 
   <body>
-    <div class="container">
-      <div class="page-title">
-        <h1><a href="index.html">SeaTraIn (beta)</a></h1>
+    <div class="page-title">
+      <a href="index.html"><h1>SeaTraIn (beta)</h1></a>
+    </div>
+
+    <div class="grey-background">
+      <div class="content-50 center-align">
+        <p><a href="Seaweed_trait_database_means.xlsx" class="button big">Download the database (.xlsx)</a></p>
       </div>
 
-      <div class="db-wrapper" style="text-align: center">
-        <div class="db">
-          <a href="https://raw.githubusercontent.com/SeaweedTraits/seaweedtraits.github.io/main/Seaweed_trait_database_means.xlsx">Download the database (.xlsx)</a>
-        </div>
-      </div>
-
-      <div class="db-wrapper">
-        <div class="db">
+      <div class="content no-padding">
+        <div class="content-33 float margin-right">
           <h2>List of species</h2>
           <input type="text" id="inputSpecies" onkeyup="filterSpecies()" placeholder="Search for species..">
 
@@ -318,7 +316,7 @@
           </table>
         </div>
 
-        <div class="db">
+        <div class="content-50">
           <h2>List of traits</h2>
           <input type="text" id="inputTraits" onkeyup="filterTraits()" placeholder="Search for traits..">
 
@@ -380,7 +378,7 @@
               <td>Carbon to Nitrogen ratio (no units): obtained by dividing Carbon content (%) by Nitrogen content (%)</td>
             </tr>
             <tr>
-              <td>Pneumatocysts_(YES/NO)</td>
+              <td>Pneumatocysts (YES/NO)</td>
               <td>Presence (YES) or absence (NO) of pneumatocysts (or "air bladders") among the blades of the sample</td>
             </tr>
             <tr>

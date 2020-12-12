@@ -2,18 +2,32 @@ body {
   font-family: Montserrat;
   font-weight: 400;
   margin: 0px;
-  color: #3E3936;
+  color: #4d4d4d;
   line-height: 1.5
 }
 
 a:link, a:visited {
   text-decoration: none;
-  color: #646B79;
+  color: #346f65;
   font-weight: 700
 }
 
 a:hover, a:active {
   text-decoration: underline;
+  color: #4d8e8a
+}
+
+a.button:link, a.button:visited {
+  text-decoration: none;
+  background-color: #346f65;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  font-weight: 400;
+  display: inline-block
+}
+
+a.button:hover, a.button:active {
+  background-color: #4d8e8a;
 }
 
 i.fab, i.ai {
@@ -44,83 +58,99 @@ h3 {
   font-family: Arvo
 }
 
-.container {
+.page-title {
   margin: 0px auto;
+  padding: 25px 0px;
+  width: 90%;
+  max-width: 1500px;
+  overflow: hidden
+}
+
+.content, .content-50, .content-33 {
+  margin: 0px auto;
+  padding: 50px 0px;
+  max-width: 1500px;
+  overflow: hidden
+}
+
+.content {
+  width: 90%;
+}
+
+.content-50 {
+  width: 50%;
+}
+
+.content-33 {
+  width: 33.333333%;
+}
+
+.no-padding {
   padding: 0px
 }
 
-.page-title {
-  padding: 25px;
+.margin-right {
+  margin-right: 25px
+}
+.grey-background {
+  background-color: #eeeeee
+}
+
+.flex {
+  display: flex
+}
+
+.float {
+  float: left
+}
+
+.big {
+  font-size: 1.5em
+}
+
+.small {
+  font-size: 0.8em
+}
+
+.img-100 {
+  width: 90%
+}
+
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.img-round {
+  border-radius: 25%;
+}
+
+.right-align {
+  text-align: right
+}
+
+.center-align {
+  text-align: center
 }
 
 .welcome {
    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://raw.githubusercontent.com/SeaweedTraits/seaweedtraits.github.io/main/images/background.jpeg);
    background-size: 100% auto;
    background-position: center center;
-   padding: 5% 25%;
    color: #FFFFFF;
-   font-size: 1.5em;
+   padding: 50px 0px
+}
+
+.welcome-text {
+  font-size: 2em;
+  font-family: Arvo;
+  line-height: 1;
+  font-weight: 900
 }
 
 .welcome img {
    width: 20%
-}
-
-.about-wrapper {
-  padding: 5% 25%;
-  overflow: hidden;
-  display: flex
-}
-
-.about {
-  width: 33.333333%;
-  text-align: center;
-  font-size: 1.5em
-}
-
-.about img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-  margin-bottom: 20px
-}
-
-.about-us-wrapper {
-  padding: 10px 10%;
-  overflow: hidden;
-  background-color: #EEEEEE
-}
-
-.about-us {
-  overflow: hidden;
-  margin: 25px
-}
-
-.about-us img {
-  width: 25%;
-  float: left;
-  margin: 25px;
-  border-radius: 25%
-}
-
-.db-wrapper {
-  padding: 10px 10%;
-  overflow: hidden;
-  display: flex;
-  background-color: #EEEEEE
-}
-
-.db {
-  margin: 0px auto;
-  width: 40%
-}
-
-.footer {
-  background-color: #eeeeee;
-  padding: 10px 20px;
-  font-size: 0.8em;
-  text-align: right;
 }
 
 #inputSpecies, #inputTraits {
@@ -128,7 +158,7 @@ h3 {
   background-position: 10px;
   background-size: 20px;
   background-repeat: no-repeat;
-  width: calc(100% - 60px);
+  width: 50%;
   font-size: 1em;
   padding: 10px 20px 10px 40px;
   border: 1px solid #ddd;
@@ -172,43 +202,32 @@ h3 {
     line-height: 1.3
   }
 
-  .page-title h1 {
-    font-family: Arvo;
+  h1 {
     font-size: 1.5em
   }
 
-  .welcome {
-    padding: 25px;
-    background-size: 200% auto;
-    font-size: 1em
-  }
-
-  .welcome h1 {
+  h2 {
     font-size: 1.25em
   }
 
-  .about-wrapper {
-    padding: 25px;
+  .content, .content-50, .content-33 {
+    padding: 10px;
+    width: 90%;
+  }
+
+  .big {
+    font-size: 1em
+  }
+
+  .welcome {
+    background-size: 200% auto;
+  }
+
+  .flex {
     flex-direction: column
   }
 
-  .about {
-    width: 100%
-  }
-
-  .about-us-wrapper {
-    padding: 25px;
-    flex-direction: column
-  }
-
-  .about-us {
-    width: 100%;
-    margin: 25px 0px
-  }
-
-  .about-us img {
-    float: none;
-    width: 100%;
-    margin: 0px auto;
+  .margin-right {
+    margin-right: 0px
   }
 }

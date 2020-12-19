@@ -116,6 +116,10 @@ h3 {
   display: flex
 }
 
+.hidden {
+  display: none
+}
+
 .float-left {
   float: left
 }
@@ -233,4 +237,15 @@ h3 {
     flex-direction: column
   }
 
+  .hidden {
+    display: block
+  }
+
+  #speciesTable {
+    display: none
+  }
+
+  #traitsTable {
+    display: none
+  }
 }

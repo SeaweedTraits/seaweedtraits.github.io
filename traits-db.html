@@ -32,6 +32,7 @@ Below you can explore the species and the traits that are available at the momen
       <div class="width-90 padding-25">
         <div class="width-25 float-left">
           <h2>List of species</h2>
+          <div class="hidden padding-25"><button onclick="showSpecies()">Show</button><button onclick="hideSpecies()">Hide</button></div>
           <input type="text" id="inputSpecies" onkeyup="filterSpecies()" placeholder="Search for species...">
 
           <table id="speciesTable">
@@ -325,6 +326,7 @@ Below you can explore the species and the traits that are available at the momen
 
         <div class="width-70 float-right">
           <h2>List of traits</h2>
+          <div class="hidden padding-25"><button onclick="showTraits()">Show</button><button onclick="hideTraits()">Hide</button></div>
           <input type="text" id="inputTraits" onkeyup="filterTraits()" placeholder="Search for traits...">
 
           <table id="traitsTable">
@@ -462,6 +464,26 @@ Below you can explore the species and the traits that are available at the momen
           }
         }
       }
+    }
+
+    function showSpecies() {
+      var x = document.getElementById("speciesTable");
+      x.style.display = "block"
+    }
+
+    function hideSpecies() {
+      var x = document.getElementById("speciesTable");
+      x.style.display = "none";
+    }
+
+    function showTraits() {
+      var x = document.getElementById("traitsTable");
+      x.style.display = "block"
+    }
+
+    function hideTraits() {
+      var x = document.getElementById("traitsTable");
+      x.style.display = "none";
     }
     </script>
   </body>

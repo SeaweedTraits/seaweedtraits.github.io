@@ -13,23 +13,24 @@
   </head>
 
   <body>
-    <div class="page-title">
+    <div class="width-90">
       <a href="index.html"><h1>SeaTraIn (beta)</h1></a>
     </div>
 
     <div class="grey-background">
-      <div class="content">
-        <p>The Seaweed Trait Initiative started in 2016 within the PhD projects of Alizée Mauffrey and Laura Cappelatti, under the supervision of Dr. John Griffin, at Swansea University (Wales). Noting the lack of widely available and organised information on macroalgal traits, they started collecting and measuring species found in the British coast, and to date there are almost 100 species and 10 continuous traits in the dataset. The overarching goal is to inspire researchers and seaweed enthusiasts around the globe to contribute with the expansion of this data, and to have an accessible, comprehensive set of trait data for seaweeds of all groups and forms.
+      <div class="width-90 padding-50">
+        <p class="margin-0">The Seaweed Trait Initiative started in 2016 within the PhD projects of Alizée Mauffrey and Laura Cappelatti, under the supervision of Dr. John Griffin, at Swansea University (Wales). Noting the lack of widely available and organised information on macroalgal traits, they started collecting and measuring species found in the British coast, and to date there are almost 100 species and 10 continuous traits in the dataset. The overarching goal is to inspire researchers and seaweed enthusiasts around the globe to contribute with the expansion of this data, and to have an accessible, comprehensive set of trait data for seaweeds of all groups and forms.
 Below you can explore the species and the traits that are available at the moment.</p>
         <p>Please note that this is a beta version of this website, and in time we hope to expand not only the data but the tools to explore the dataset.</p>
-        <p>Feel free to <a href="mailto:seaweedtraits@gmail.com">contact us</a>.</p>
-      </div>
-      <div class="content-50 no-padding center-align">
-        <p><a href="Seaweed_trait_database_means.xlsx" class="button big">Download the dataset (.xlsx)</a></p>
+        <p class="margin-0">Feel free to <a href="mailto:seaweedtraits@gmail.com">contact us</a>.</p>
       </div>
 
-      <div class="content no-padding">
-        <div class="content-33 float margin-right">
+      <div class="width-50 padding-25 center-align">
+        <p class="margin-0"><a href="Seaweed_trait_database_means.xlsx" class="button big">Download the dataset (.xlsx)</a></p>
+      </div>
+
+      <div class="width-90 padding-25">
+        <div class="width-25 float-left">
           <h2>List of species</h2>
           <input type="text" id="inputSpecies" onkeyup="filterSpecies()" placeholder="Search for species...">
 
@@ -322,7 +323,7 @@ Below you can explore the species and the traits that are available at the momen
           </table>
         </div>
 
-        <div class="content-50">
+        <div class="width-70 float-right">
           <h2>List of traits</h2>
           <input type="text" id="inputTraits" onkeyup="filterTraits()" placeholder="Search for traits...">
 
@@ -369,14 +370,14 @@ Below you can explore the species and the traits that are available at the momen
             </tr>
             <tr>
               <td>SA:P</td>
-              <td>Surface Area to Perimeter ratio (no units): obtained by dividing the area (mm²) of a sample by its perimeter (mm)</td>
+              <td>Surface Area to Perimeter ratio (no units): obtained by dividing the area (mm<sup>2</sup>) of a sample by its perimeter (mm)</td>
             </tr>
             <tr>
-              <td>C_(%)</td>
+              <td>C (%)</td>
               <td>Carbon content (%)</td>
             </tr>
             <tr>
-              <td>N_(%)</td>
+              <td>N (%)</td>
               <td>Nitrogent content (%)</td>
             </tr>
             <tr>
@@ -392,7 +393,7 @@ Below you can explore the species and the traits that are available at the momen
               <td>Morpho-functional groups defined by the functional-form model of Littler and Littler (1980, "The evolution of thallus form and survival strategies in benthic marine macroalgae: field and laboratory tests of a functional form model")</td>
             </tr>
             <tr>
-              <td>FGs_simple</td>
+              <td>FGs simple</td>
               <td>Functional groups defined by Steneck and Dethier's (1994, "A functional group approach to the structure of algal-dominated communities") simplified classification (i.e., without sub-groups)</td>
             </tr>
             <tr>
@@ -400,15 +401,15 @@ Below you can explore the species and the traits that are available at the momen
               <td>Functional groups defined by Steneck and Dethier's (1994, "A functional group approach to the structure of algal-dominated communities") detailed classification (i.e., including sub-groups based on level of cortication)</td>
             </tr>
             <tr>
-              <td>Canopy_turf</td>
+              <td>Canopy turf</td>
               <td>Binary classification of vertical space use. Turfs were considered macroalgae with little to no three-dimensional structure compared with kelp and other canopy-forming macroalgae that form a dense layer of fine filaments, branches, or plumes on the substratum (Filbee-Dexter & Wernberg, 2018).</td>
             </tr>
             <tr>
-              <td>Vertical_use</td>
+              <td>Vertical use</td>
               <td>Three-level classification of vertical space use adapted from Arenas et al. (2006, "The invasibility of marine algal assemblages: role of functional diversity and identity"). Location along the canopy is somewhat community-dependent, so we categorised species into the three-level scheme based on what we judged was the most common scenario on the rocky shores screened.</td>
             </tr>
             <tr>
-              <td>EGs_k_medoids</td>
+              <td>EGs k medoids</td>
               <td>Nine-cluster emergent classification built on the twelve traits of the dataset using k-medoids, a top-down clustering approach</td>
             </tr>
             <tr>
